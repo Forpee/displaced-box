@@ -23,10 +23,14 @@ const scene = new THREE.Scene();
 // Geometry
 const geometry = new THREE.BoxBufferGeometry(1, 1, 1, 10, 1, 10);
 
+const tt1 = new THREE.TextureLoader().load('/1.png');
+const tt2 = new THREE.TextureLoader().load('/2.png');
 // Material
 const material = new THREE.ShaderMaterial({
     uniforms: {
         uTime: { value: 0 },
+        uTexture1: { value: tt1 },
+        uTexture2: { value: tt2 },
     },
     vertexShader: vertexShader,
     fragmentShader: fragmentShader,
