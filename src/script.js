@@ -21,7 +21,7 @@ const scene = new THREE.Scene();
  * Test mesh
  */
 // Geometry
-const geometry = new THREE.BoxBufferGeometry(1, 1, 1, 10, 1, 10);
+const geometry = new THREE.BoxBufferGeometry(1, 1, 1, 320, 1, 320);
 
 const tt1 = new THREE.TextureLoader().load('/1.png');
 const tt2 = new THREE.TextureLoader().load('/2.png');
