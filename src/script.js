@@ -25,6 +25,11 @@ const geometry = new THREE.BoxBufferGeometry(1, 1, 1, 10, 1, 10);
 
 const tt1 = new THREE.TextureLoader().load('/1.png');
 const tt2 = new THREE.TextureLoader().load('/2.png');
+
+tt1.wrapS = THREE.MirroredRepeatWrapping;
+tt1.wrapT = THREE.MirroredRepeatWrapping;
+tt2.wrapS = THREE.MirroredRepeatWrapping;
+tt2.wrapT = THREE.MirroredRepeatWrapping;
 // Material
 const material = new THREE.ShaderMaterial({
     uniforms: {
